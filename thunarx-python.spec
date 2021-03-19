@@ -30,6 +30,7 @@ which allow one to create Python plugins for Thunar.
 %build
 export PYTHON=%{__python}
 export PYTHON_LIBS=-lpython%{python_version}
+autoreconf --force --install
 %configure
 %make_build
 
