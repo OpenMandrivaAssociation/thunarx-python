@@ -9,6 +9,7 @@ Url:            https://goodies.xfce.org/projects/bindings/thunarx-python
 Group:          Development/Python
 Source:         https://archive.xfce.org/src/bindings/%{name}/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:  fdupes
+BuildRequires:  libtool
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(pygobject-3.0)
@@ -30,7 +31,7 @@ which allow one to create Python plugins for Thunar.
 %build
 export PYTHON=%{__python}
 export PYTHON_LIBS=-lpython%{python_version}
-autoreconf --force --install
+autoreconf -i
 %configure
 %make_build
 
