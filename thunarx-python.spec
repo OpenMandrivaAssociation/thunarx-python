@@ -14,6 +14,8 @@ BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(pygobject-3.0)
 BuildRequires:  pkgconfig(thunarx-3)
 BuildRequires:  pkgconfig(python)
+BuildRequires:  pkgconfig(gtk-doc)
+BuildRequires:  gtk-doc
 Requires:       thunar
 Requires:       python3dist(pygobject)
 Requires:       typelib(Thunarx)
