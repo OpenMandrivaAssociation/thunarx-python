@@ -8,7 +8,10 @@ Summary:        Python Bindings for the Thunar Extension Framework
 Url:            https://goodies.xfce.org/projects/bindings/thunarx-python
 Group:          Development/Python
 Source:         https://archive.xfce.org/src/bindings/%{name}/%{url_ver}/%{name}-%{version}.tar.bz2
+BuildRequires:  autoconf
+BuildRequires:  autoconf-archive
 BuildRequires:  fdupes
+BuildRequires:  m4
 BuildRequires:  libtool
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(glib-2.0)
