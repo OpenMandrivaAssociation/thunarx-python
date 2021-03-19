@@ -2,7 +2,7 @@
 
 Name:           thunarx-python
 Version:        0.5.2
-Release:        %mkrel 1
+Release:        1
 License:        GPLv2+
 Summary:        Python Bindings for the Thunar Extension Framework
 Url:            https://goodies.xfce.org/projects/bindings/thunarx-python
@@ -13,11 +13,10 @@ BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(pygobject-3.0)
 BuildRequires:  pkgconfig(thunarx-3)
-BuildRequires:  python3-devel
+BuildRequires:  pkgconfig(python)
 Requires:       thunar
-Requires:       python3-gobject3
+Requires:       python3dist(pygobject)
 Requires:       typelib(Thunarx)
-Obsoletes:      %{name}-doc < 0.4.0
 
 %description
 This package provides the Python bindings for the Thunar Extension framework
@@ -27,8 +26,8 @@ which allow one to create Python plugins for Thunar.
 %autosetup -p1
 
 %build
-export PYTHON=%{__python3}
-export PYTHON_LIBS=-lpython%{python3_version}
+export PYTHON=%{__python}
+export PYTHON_LIBS=-lpython%{python_version}
 %configure
 %make_build
 
