@@ -13,6 +13,7 @@ BuildRequires:  autoconf-archive
 BuildRequires:  fdupes
 BuildRequires:  m4
 BuildRequires:  libtool
+BuildRequires:  xfce-dev-tools
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(pygobject-3.0)
