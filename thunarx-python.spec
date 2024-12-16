@@ -2,7 +2,7 @@
 
 Name:           thunarx-python
 Version:        0.5.2
-Release:        1
+Release:        2
 License:        GPLv2+
 Summary:        Python Bindings for the Thunar Extension Framework
 Url:            https://goodies.xfce.org/projects/bindings/thunarx-python
